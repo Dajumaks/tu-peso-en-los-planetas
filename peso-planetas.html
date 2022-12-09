@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conversión Planetaria</title>
+    <link rel="shortcut icon" href="">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <section class="contenedor-imagen">
+
+        <div class="cabecera">
+            <h1 class="titulo">Tu peso en la "vía láctea"</h1>
+            <p class="descripcion">Averigua Tu Peso en otro Planeta usando la conversión</p>
+            <p class="descrpcion">Josué Daniel Castaño Montoya</p>
+        </div>
+        <br>
+        <div class="ladoIzquierdo">
+            <div class="head">
+                <p class="texto-ingresar">Tu peso:
+                    <input id="pesoUsuario" placeholder="00.0" type="number" min="1" max="350" step="0.1">
+                    kg
+                </p>
+            </div>
+            <div id="peso-container">
+                <p id="peso">Ingresa tu peso actual: </p>
+
+            </div>
+            <img class="Tierra" id="tierra" src="img/Tierra.png" alt="Tierra">
+
+        </div>
+        <div class="ladoDerecho">
+            <div class="head">
+                <select class="planetas" id="planetas">
+                    <option>Elige planeta</option>
+                    <option>Mercurio</option>
+                    <option>Venus</option>
+                    <option>Marte</option>
+                    <option>Júpiter</option>
+                    <option>Saturno</option>
+                    <option>Neptuno</option>
+                    <option>Urano</option>
+                </select>
+            </div>
+            <div id="img-container">
+                <img class="Saturno" id="imagen" src="" alt="Elige un planeta">
+            </div>
+            <div id="pesoCalculado-container">
+                <p id="pesoCalculado">Tu peso es: </p>
+            </div>
+        </div>
+        <div class="rana-pepe"><img src="/RanaResultado.png(1) - copia.png" alt="RanaResultado"></div>
+
+
+        <script src="script.js" language="javascript" type="text/javascript"></script>
+</body>
+
+</html>

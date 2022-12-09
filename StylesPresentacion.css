@@ -1,0 +1,162 @@
+:root {
+    --color-fondo: #00315f;
+    --color-letra: #000000;
+    --tamaño-letra: 25px;
+    --tamaño-titulo: 40px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Pagina-cargando {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    height: 100vh;
+    animation: desaparecer 3s forwards;
+}
+
+
+.Logo-Disturbed {
+    width: 100px;
+    height: 75px;
+}
+
+.enlaces {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+
+}
+
+.enlaces a {
+    font-size: var(--tamaño-letra);
+    color: var(--color-letra);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.texto {
+    font-size: var(--tamaño-letra);
+    color: white;
+}
+
+.titulo {
+    font-size: var(--tamaño-titulo);
+    color:#000000
+}
+
+.pagina-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background: radial-gradient(ellipse at bottom, #75154d 0%, #090a0f 100%);
+    border-bottom-right-radius: 20px;
+    width: 745px;
+    height: 345px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: subir 3s 0.2s;
+    border-top-right-radius: 50px;
+    padding: 20px;
+}
+
+@keyframes subir {
+    0% {
+        position: relative;
+        bottom: -345px;
+    }
+
+    100% {
+        position: relative;
+        bottom: 0px;
+    }
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    width: 220px;
+    height: 300px;
+    background-color: var(--color-letra);
+    border-radius: 20px;
+}
+
+.info-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    gap: 10px;
+}
+
+.pagina-info-secundaria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "blanco imagen imagen imagen texto";
+    animation: derecha 3s 0.2s;
+}
+
+@keyframes derecha {
+    0% {
+        position: relative;
+        right:  -400px;
+    }
+
+    100% {
+        position: relative;
+        right:  10px;
+    }
+}
+
+
+.fondo-rosa {
+    grid-column: 3/6;
+    grid-row: 1/2;
+    background: radial-gradient(ellipse at bottom, #75154d 0%, #090a0f 100%);
+}
+
+.texto-imagen {
+    grid-area: texto;
+    writing-mode: vertical-rl;
+    font-size: var(--tamaño-titulo);
+    color: white;
+    align-self: center;
+}
+.imagen-skyrim {
+    width: 100%;
+    grid-area: imagen;
+    align-self: center;
+}
+
+.boton{
+    border-radius: 20px;
+    padding: 10px;
+    
+    
+}
+
+.boton p{
+    /* color: white; */
+    color: radial-gradient(ellipse at bottom, #75154d 0%, #090a0f 100%);
+    text-decoration:underline;
+    font-weight: bold;
+}

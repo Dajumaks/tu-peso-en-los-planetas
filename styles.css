@@ -1,0 +1,160 @@
+html,
+body {
+    margin: 0;
+    color: #F5F4F6;
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #75154d 0%, #090a0f 100%);
+    overflow: hidden;
+}
+
+select,
+input,
+option {
+    text-align: center;
+    font-size: 17.5px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input {
+    width: 15%;
+    background: none;
+    color: #F5F4F6;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+select {
+    font-weight: bold;
+    width: 30%;
+}
+
+.cabecera {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.titulo {
+    font-size: 24px;
+    color: #F5F4F6;
+}
+
+.descripcion {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.ladoIzquierdo,
+.ladoDerecho {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.ladoIzquierdo {
+    float: left;
+}
+
+.ladoDerecho {
+    float: right;
+}
+
+.texto-ingresar {
+    font-size: 20px;
+    margin: 0;
+}
+
+.head {
+    height: 50px;
+}
+
+img,
+#imagen {
+    padding: 10px 0px;
+}
+
+#tierra {
+    animation: movTierra 2s linear infinite;
+}
+
+#imagen {
+    animation: movPlanetas 2s linear infinite;
+}
+
+@keyframes movTierra {
+    0% {
+        transform: translateX(4px);
+    }
+
+    50% {
+        transform: translateX(-8px);
+    }
+
+    100% {
+        transform: translateX(4px);
+    }
+}
+
+@keyframes movPlanetas {
+    0% {
+        transform: translateX(-4px);
+    }
+
+    50% {
+        transform: translateX(8px);
+    }
+
+    100% {
+        transform: translateX(-4px);
+    }
+}
+
+#peso,
+#pesoCalculado {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.rana-pepe {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+}
+
+.Tierra {
+    margin-top: 20px;
+    height: 250px;
+    width: 250px;
+}
+
+.Saturno {
+    height: 200px;
+    width: 200px;
+}
+
+.pagina-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    gap: 10px;
+    color: #090a0f;
+}
+
+.pagina-inicio {
+    background-color: aquamarine;
+}
